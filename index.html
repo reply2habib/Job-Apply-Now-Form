@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="applyNow-form">
+        <div class="container">
+            <form action="" id="applyNow">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12 ">
+                        <label>Your Name <em>*</em></label>
+                        <input type="text">
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <label>Last Name <em>*</em></label>
+                        <input type="text">
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <label>Your Number <em>*</em></label>
+                        <input id="phone" type="tel" placeholder="(03XX) XXX-XXXX">
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <label>Email <em>*</em></label>
+                        <input type="email">
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <label>Address <em>*</em></label>
+                        <input type="text">
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <label>Married Status <em>*</em></label>
+                        <select>
+                            <option value="Single">Select</option>
+                            <option value="Single">Single</option>
+                            <option value="Married">Married</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <label>Sex<em>*</em></label>
+                        <select>
+                            <option value="Single">Select</option>
+                            <option value="Single">Male</option>
+                            <option value="Married">Female</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <label>CNIC Number <em>*</em></label>
+                        <input id="cnic" type="text">
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <label>Country<em>*</em></label>
+                        <input type="text">
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <label>Your City<em>*</em></label>
+                        <input type="text">
+                    </div>
+                </div>
+                <!-- Your Experience Area Start -->
+
+                <div class="wrapperFeild">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <h2>Your Experience</h2>
+                        </div>
+                    </div>
+                    <div class="row experienceRow">
+
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <label>Title</label>
+                            <input type="text">
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <label>Company Name</label>
+                            <input type="text">
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 ">
+                            <label>Description</label>
+                            <input type="text">
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <label>Joining Date</label>
+                            <input type="date">
+                        </div>
+                        <div class="col-md-4 col-sm-6 endDate">
+                            <fieldset class="">
+                                <label>End Date</label>
+                                <input type="date">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <label>Currently Working</label>
+                            <div class="checkBoxWrapper">
+                                <input class="currentlyWorking" type="checkbox">
+                                <label for="Currently Working">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <button class="addMore ">+ Add More </button>
+                <button class="removeBtn">Remove</button>
+
+
+
+
+                <!--  Education Start here -->
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <h2>Education</h2>
+                        <div class="multi-field-wrapper">
+                            <div class="multi-fields">
+                                <div class="multi-field">
+                                    <div class="single-field-wrapper">
+                                        <label>Name</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="single-field-wrapper">
+                                        <label>School & University Name</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="single-field-wrapper">
+                                        <label>Year</label>
+                                        <input type="text">
+                                    </div>
+
+                                    <button type="button" class="add-field addBtn"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+                                    <button type="button" class="remove-field addBtn"><i class="fa fa-minus-circle" aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- skills Start here -->
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <h2>Skills</h2>
+                    </div>
+                </div>
+
+                <div class="row-checkboxes-wrapper">
+                    <div class="col-checkBox">
+                        <div class="checkBoxWrapper">
+                            <input class="" type="checkbox">
+                            <label for="HTML">HTML</label>
+                        </div>
+                    </div>
+                    <div class="col-checkBox">
+                        <div class="checkBoxWrapper">
+                            <input class="" type="checkbox">
+                            <label for="Wordpress">Wordpress</label>
+                        </div>
+                    </div>
+                    <div class="col-checkBox">
+                        <div class="checkBoxWrapper">
+                            <input class="" type="checkbox">
+                            <label for="CSS3">CSS3</label>
+                        </div>
+                    </div>
+                    <div class="col-checkBox">
+                        <div class="checkBoxWrapper">
+                            <input class="" type="checkbox">
+                            <label for="Custom PHP">Custom PHP</label>
+                        </div>
+                    </div>
+                    <div class="col-checkBox">
+                        <div class="checkBoxWrapper">
+                            <input class="" type="checkbox">
+                            <label for="Laravel">Laravel</label>
+                        </div>
+                    </div>
+                    <div class="col-checkBox">
+                        <div class="checkBoxWrapper">
+                            <input class="" type="checkbox">
+                            <label for="UI / UX Designer">UI / UX Designer</label>
+                        </div>
+                    </div>
+                    <div class="col-checkBox">
+                        <div class="checkBoxWrapper">
+                            <input class="" type="checkbox">
+                            <label for="Digital Marketing">Digital Marketing</label>
+                        </div>
+                    </div>
+                    <div class="col-checkBox">
+                        <div class="checkBoxWrapper">
+                            <input class="" type="checkbox">
+                            <label for="Graphic Designer">Graphic Designer</label>
+                        </div>
+                    </div>
+                    <div class="col-checkBox">
+                        <div class="checkBoxWrapper">
+                            <input class="" type="checkbox">
+                            <label for="SEO Marketing">SEO Marketing</label>
+                        </div>
+                    </div>
+                    <div class="col-checkBox">
+                        <div class="checkBoxWrapper">
+                            <input class="OtherSkills" type="checkbox">
+                            <label for="Other">Other</label>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 moreSkills" style="display: none;">
+                        <input type="text" placeholder="Add skills with comma separated">
+                    </div>
+                </div>
+
+                <!-- Languages Start here -->
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <h2>Languages</h2>
+                    </div>
+                </div>
+                <div class="row-checkboxes-wrapper">
+                    <div class="col-checkBox">
+                        <div class="checkBoxWrapper">
+                            <input class="" type="checkbox">
+                            <label for="English">English</label>
+                        </div>
+                    </div>
+                    <div class="col-checkBox">
+                        <div class="checkBoxWrapper">
+                            <input class="" type="checkbox">
+                            <label for="Urdu">Urdu</label>
+                        </div>
+                    </div>
+                    <div class="col-checkBox">
+                        <div class="checkBoxWrapper">
+                            <input class="" type="checkbox">
+                            <label for="Chinese">Chinese</label>
+                        </div>
+                    </div>
+                    <div class="col-checkBox">
+                        <div class="checkBoxWrapper">
+                            <input class="Otherlangs" type="checkbox">
+                            <label for="Other">Other</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 morelangField" style="display: none;">
+                        <input type="text" placeholder="Add Languages with comma separated">
+                    </div>
+                </div>
+                <!-- Portfolio Start Here -->
+                <div class="row portfolioRow">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <h2>Portfolio</h2>
+                        <div class="multi-field-wrapper">
+                            <div class="multi-fields">
+                                <div class="multi-field">
+                                    <div class="single-field-wrapper">
+                                        <label>Links</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="single-field-wrapper">
+                                        <label>Description</label>
+                                        <input type="text">
+                                    </div>
+                                    <button type="button" class="add-field addBtn"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+                                    <button type="button" class="remove-field addBtn"><i class="fa fa-minus-circle" aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Reference Start Here -->
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <h2>Reference</h2>
+                        <input type="text" placeholder="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <input type="submit" value="Submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
+
+<script>
+    // masking
+    $("#phone").inputmask({
+        "mask": "(9999) 999-9999"
+    });
+    $("#cnic").inputmask({
+        "mask": "99999-9999999-9"
+    });
+
+    // Checkbox show hide fields
+
+    $(".currentlyWorking").click(function() {
+        if ($(this).is(":checked")) {
+            $(".endDate").hide();
+        } else {
+            $(".endDate").show();
+        }
+    });
+    $(".OtherSkills").click(function() {
+        if ($(this).is(":checked")) {
+            $(".moreSkills").show();
+        } else {
+            $(".moreSkills").hide();
+        }
+    });
+    $(".Otherlangs").click(function() {
+        if ($(this).is(":checked")) {
+            $(".morelangField").show();
+        } else {
+            $(".morelangField").hide();
+        }
+    });
+
+    // Fields Repeater
+
+    $('.multi-field-wrapper').each(function() {
+        var $wrapper = $('.multi-fields', this);
+        $(".add-field", $(this)).click(function(e) {
+            $('.multi-field:first-child', $wrapper).clone(true).appendTo($wrapper).find('input').val('').focus();
+        });
+        $('.multi-field .remove-field', $wrapper).click(function() {
+            if ($('.multi-field', $wrapper).length > 1)
+                $(this).parent('.multi-field').remove();
+        });
+    });
+
+
+
+    $(document).ready(function() {
+        $(".addMore").click(function(e) {
+            e.preventDefault();
+            // alert('asdsad')
+            $(".wrapperFeild").append(`
+            <div class="row experienceRow">
+    
+    <div class="col-md-6 col-sm-12 col-xs-12">
+        <label>Title</label>
+        <input type="text">
+    </div>
+    <div class="col-md-6 col-sm-12 col-xs-12">
+        <label>Company Name</label>
+        <input type="text">
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <label>Description</label>
+        <input type="text">
+    </div>
+    <div class="col-md-4">
+        <label>Joining Date</label>
+        <input type="date">
+    </div>
+    <div class="col-md-4 endDate">
+        <fieldset class="">
+            <label>End Date</label>
+            <input type="date">
+        </fieldset>
+    </div>
+    <div class="col-md-4">
+        <label>Currently Working</label>
+        <div class="checkBoxWrapper">
+            <input class="currentlyWorking" type="checkbox">
+            <label for="Currently Working">Yes</label>
+        </div>
+        
+    </div>
+    <hr>
+    </div>
+    
+  
+            `);
+        });
+        $('.removeBtn').click(function(e) {
+            e.preventDefault();
+
+            $('.wrapperFeild').children('.experienceRow').last().remove();
+
+        });
+    });
+</script>
+
+
+
+
+</div>
+
+</html>

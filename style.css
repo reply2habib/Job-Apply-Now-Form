@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.applyNow-form #applyNow {
+    background: url(img/formbg.jpg) no-repeat;
+    background-size: cover;
+    padding: 30px 30px;
+}
+
+#applyNow label {
+    display: block;
+    color: #000;
+    line-height: 14px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+#applyNow input,
+#applyNow select {
+    background: #f2f7ff;
+    outline: none;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px 1px #ccc;
+    height: 50px;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 25px;
+}
+
+#applyNow label em {
+    font-size: 15px;
+}
+
+.checkBoxWrapper {
+    display: flex;
+    align-items: center;
+}
+
+#applyNow .checkBoxWrapper input {
+    background: transparent !important;
+    border: 0px solid #ccc !important;
+    box-shadow: 0 0 0px 0px #ccc !important;
+    width: 35px;
+    height: 35px;
+    margin: 0 !important;
+}
+
+#applyNow .checkBoxWrapper label {
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+#applyNow .checkBoxWrapper input[type="checkbox"]:before {
+    font-family: "FontAwesome";
+    content: "\f00c";
+    font-size: 15px;
+    color: transparent !important;
+    background: #fff;
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #4770b7;
+    margin-right: 7px;
+}
+
+#applyNow .checkBoxWrapper input[type="checkbox"]:checked:before {
+    color: #547abc !important;
+    font-size: 30px;
+}
+
+#applyNow .row {
+    display: flex;
+    align-items: flex-starts;
+    flex-flow: row wrap;
+}
+
+#applyNow h2 {
+    font-weight: 600;
+    color: #4770b7;
+    margin-bottom: 30px;
+    font-size: 24px;
+    border-bottom: 1px solid #ccc;
+    padding: 0 16px 8px 0;
+}
+
+.multi-field .single-field-wrapper {
+    width: 100%;
+    max-width: 31%;
+}
+
+.multi-field {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.multi-field:first-child .remove-field {
+    display: none;
+}
+
+.addBtn {
+    background: transparent;
+    border: 0;
+    font-size: 24px;
+    color: gray;
+    transition: all 0.25s;
+}
+
+.addBtn:hover {
+    color: #000;
+    transition: all 0.25s;
+}
+
+.col-checkBox {
+    max-width: 20%;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.row-checkboxes-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.col-md-12.moreSkills {
+    margin-top: 18px;
+}
+
+.portfolioRow .single-field-wrapper {
+    width: 100%;
+    max-width: 47%;
+}
+
+#applyNow input[type="submit"] {
+    background-color: #567dbe;
+    color: #fff;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    background-image: none;
+    letter-spacing: 2px;
+    font-size: 16px;
+    width: 180px;
+    margin: 0 auto;
+    display: block;
+}
+
+#applyNow input[type="submit"]:hover {
+    background-color: #335184;
+}
+
+.addMore,
+.removeBtn {
+    background: #567dbe !important;
+    color: #fff !important;
+    border-radius: 0px !important;
+    outline: none;
+    border: 0;
+    padding: 10px 30px;
+}
+
+.applyNow-form hr {
+    border: 1px dashed #808080;
+}
+
+@media (max-width:991px) {
+    .multi-field .single-field-wrapper {
+        max-width: 51%;
+    }
+    .multi-field {
+        flex-flow: row wrap;
+    }
+    .multi-field .single-field-wrapper {
+        max-width: 100%;
+    }
+    .addMore,
+    .removeBtn {
+        margin-top: 10px;
+    }
+    .col-checkBox {
+        max-width: 33%;
+    }
+}
+
+@media (max-width:600px) {
+    .col-checkBox {
+        max-width: 50%;
+    }
+}
